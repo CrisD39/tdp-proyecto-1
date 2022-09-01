@@ -71,7 +71,7 @@ public class SimplePresentationScreen extends JFrame {
 		
 		lblImagen = new JLabel("Foto");
 		lblImagen.setHorizontalAlignment(SwingConstants.CENTER);
-		lblImagen.setBounds(445, 32, 144, 168);
+		lblImagen.setBounds(445, 26, 144, 153);
 		ImageIcon imagen = new ImageIcon(SimplePresentationScreen.class.getResource(studentData.getPathPhoto()));
 		Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(lblImagen.getWidth(), lblImagen.getHeight(), Image.SCALE_DEFAULT));
 		lblImagen.setIcon(icono);
@@ -155,6 +155,6 @@ public class SimplePresentationScreen extends JFrame {
 	private void mostrarTiempo()
 	{
 		time = new Tiempo();
-		lblTiempo.setText(" Esta Ventana fue generada " + time.GetDia() +" a las " + time.GetHora());
+		lblTiempo.setText(" Esta Ventana fue generada el " + time.GetDia() +" a las " + time.GetHora());
 	}
 }
